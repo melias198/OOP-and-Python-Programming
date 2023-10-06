@@ -21,3 +21,16 @@
 
 ### Practice Day 01(M 2.5)
 [Practice Day 01](https://docs.google.com/document/d/1vkTq2mxAZi7VTFilcNY5i4rqvqovNnTM4-dInV9aadY/edit).
+
+
+### Module 03
+```
+-String and Methods
+-Tuple and Methods
+-Set and Methods
+-Dictionary and Methods
+-Built-In Modules
+-PyAutoGui and OpenCv
+-Try,Except,Finally
+-Lambda Function
+```
