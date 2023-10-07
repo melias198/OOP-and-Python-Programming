@@ -6,6 +6,7 @@
 # with open('massege.txt','a') as file:
 #     file.write('I Love You\n')
 
+#for reading from file
 with open('massege.txt','r') as file:
     ans = file.read()
     print(ans)

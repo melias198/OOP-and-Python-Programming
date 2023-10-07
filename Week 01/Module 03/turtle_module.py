@@ -1,6 +1,6 @@
 # Python program to draw star
 # using Turtle Programming
-import turtle
+import turtle 
 star = turtle.Turtle()
 
 star.right(75)
