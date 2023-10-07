@@ -34,3 +34,6 @@
 -Try,Except,Finally
 -Lambda Function
 ```
+
+### Module 04(Assignment 01)
+[Assignment 01](https://docs.google.com/document/d/1nfaw5swn5-LoWHfbCOz-0TK_uKVjuUB1a33v2w7wpCc/edit).
