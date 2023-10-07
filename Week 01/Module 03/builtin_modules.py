@@ -28,5 +28,5 @@ from datetime import *
 now = datetime.now()
 print(now)
 current_date = date.today()
-print(current_date)
+print(current_date) 
 

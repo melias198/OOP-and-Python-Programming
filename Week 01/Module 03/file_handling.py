@@ -9,4 +9,4 @@
 #for reading from file
 with open('massege.txt','r') as file:
     ans = file.read()
-    print(ans)
+    print(ans) 
