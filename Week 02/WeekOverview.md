@@ -22,3 +22,26 @@
 -Abstract Vs Interfaces
 -Polymorphism
 ```
+
+### Practice Day 01(M 6.5)
+[Practice Day 01](https://docs.google.com/document/d/1oz0kZt1_XdofqfxH0qeiNYTkpUmvLyma0Pdf4CeMkig/edit)
+
+
+### Module 07
+```
+-Operator Overloading and Method Overriding
+-Static Method and Class Method
+-Getter Setter
+-Inner Function and Wrapper Function
+-Decorator
+-Class Composition
+-UML Diagram
+-Design Pattern
+```
+
+### Practice Day 02(M 7.5)
+[Practice Day 02](https://docs.google.com/document/d/1DxHEw2Ij6FTqMijlkn4NH6U1BdxeesyLWOjINiKFtR0/edit)
+
+
+### Mid Term Exam(M 08)
+[Mid Term Exam Question](https://docs.google.com/document/d/1FlOF7YuItYP-Of7VdMxipuoZf5BcOUsp6OxswM1yvds/edit)
