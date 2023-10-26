@@ -283,10 +283,10 @@ while True:
                                 e = int(input("Enter your choice : "))
                                 if e == 1:
                                     bank.loan_switch_on()
-                                    print("Loan service in on.")
+                                    print("Loan service has been on.")
                                 elif e == 2:
                                     bank.loan_switch_off()
-                                    print("Loan service is off.")
+                                    print("Loan service has been off.")
                                 else:
                                     print("Invalid choice.")
                             else:
