@@ -62,7 +62,7 @@ class UserAccount(User):
             amount = int(input("Enter your withdrawal amount : "))
 
             if amount >=0 and amount <= user['balance']:
-                if bank.bank_balance > 0:
+                if bank.bank_balance > 0 and bank.bank_balance >= amount:
                     user['balance'] -= amount
                     user['transaction'].append(f"Withdrawal : {amount} BDT")
                     bank.bank_balance -= amount
@@ -113,13 +113,17 @@ class UserAccount(User):
         if bank.loan_enable == True:
             if user['balance'] > 0:
                 limit = user['balance']*2
-                print(f"Availabe loan amount for you : {limit} BDT\n")
+                print(f"Availabe elligible loan amount for you : {limit} BDT\n")
                 amount = int(input("Please enter the loan amount you wish to receive : "))
                 if amount >= 0 and amount <= limit:
-                    user['loan'] += amount
-                    bank.loan_balance += amount
-                    user['transaction'].append(f"Loan : {amount} BDT from Bank")
-                    print(f"Here's your loan money : {amount} BDT")
+                    if bank.bank_balance >= amount:
+                        user['loan'] += amount
+                        bank.loan_balance += amount
+                        bank.bank_balance -= amount
+                        user['transaction'].append(f"Loan : {amount} BDT from Bank")
+                        print(f"Here's your loan money : {amount} BDT")
+                    else:
+                        print("Bank dosen't have sufficient money.")
                 else:
                     print("Invalid amount")
             else:
@@ -139,7 +143,6 @@ class UserAccount(User):
             if user['balance'] >= user['loan']:
                 user['balance'] -= user['loan']
                 bank.loan_balance -= user['loan']
-                bank.bank_balance -= user['loan']
                 user['transaction'].append(f"Repay loan : {user['loan']} BDT to Bank")
                 user['loan'] = 0
                 print(f"After repay loan, your balance is : {user['balance']} BDT")
